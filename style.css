@@ -1,8 +1,8 @@
 /* Fonts */
 
 @font-face {
-    font-family: kaiseitokuminregular;
-    src: url(fonts\kaisei_tokumin\kaiseitokuminregular.ttf);
+    font-family: KaiseiTokuminRegular;
+    src: url(fonts/kaisei_tokumin/kaiseitokuminregular.ttf);
 }
 
 /* Navigation bar */
@@ -12,6 +12,7 @@ nav ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    background-color: #226b8f;
 }
 
 nav ul li {
@@ -22,12 +23,11 @@ nav ul li {
 nav ul li a {
     display: block;
     padding: 8px;
-    background-color: #226b8f;
     color: white;
     text-align: center;
     padding: 10px 14px;
     text-decoration: none;
-    font-family: kaiseitokuminregular;
+    font-family: KaiseiTokuminRegular;
 }
 
 nav ul li a:hover {
