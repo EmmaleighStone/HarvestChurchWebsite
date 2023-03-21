@@ -1,8 +1,8 @@
 /* Fonts */
 
 @font-face {
-    font-family: KaiseiTokumin-Regular;
-    src: url(fonts\Kaisei_Tokumin\KaiseiTokumin-Regular.ttf);
+    font-family: kaiseitokuminregular;
+    src: url(fonts\kaisei_tokumin\kaiseitokuminregular.ttf);
 }
 
 /* Navigation bar */
@@ -27,7 +27,7 @@ nav ul li a {
     text-align: center;
     padding: 10px 14px;
     text-decoration: none;
-    font-family: KaiseiTokumin-Regular;
+    font-family: kaiseitokuminregular;
 }
 
 nav ul li a:hover {
