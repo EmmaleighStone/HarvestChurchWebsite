@@ -13,6 +13,9 @@ nav ul {
     padding: 0;
     overflow: hidden;
     background-color: #226b8f;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 nav ul li {
@@ -36,4 +39,15 @@ nav ul li a:hover {
 
 .active {
     background-color: #4491b8;
+}
+
+/* Body */
+
+body {
+    margin: 0;
+}
+
+.content {
+    margin-top: 20px;
+    padding: 20px;
 }
