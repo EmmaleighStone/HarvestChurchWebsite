@@ -1,0 +1,17 @@
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    padding: 8px;
+    background-color: #226b8f;
+    color: white;
+}
