@@ -56,10 +56,8 @@ h2
     text-align: center;
     margin-left: 2.5%;
     margin-right: 2.5%;
-    margin-top: 25px;
     color: #226b8f;
     font-size: 75px;
-    padding-bottom: 25px;
     font-variant: small-caps;
 
 }
@@ -96,7 +94,7 @@ h2
 {
     width: 45%;
     float: left;
-    height: 350px;
+    height: 375px;
     border: #226b8f 2px solid;
     text-align: center;
     margin-left: 2.5%;
@@ -122,7 +120,7 @@ h2
 {
     width: 45%;
     float: right;
-    height: 350px;
+    height: 375px;
     border: #226b8f 2px solid;
     text-align: right;
     margin-right: 2.5%;
@@ -167,6 +165,7 @@ form h1
     background-color: #d5ecf7;
     color: black;
     font-variant: small-caps;
+    text-decoration: underline;
 }
 .prayerForm form
 {
@@ -226,6 +225,10 @@ form textarea
     margin-top: 15px;
 }
 
+.content
+{
+    margin-bottom: 100px;
+}
 
 *
 {
@@ -234,10 +237,47 @@ form textarea
 
 footer h1
 {
-    background-color: white;
-    font-size: 15px;
-    color: black;
-    margin-top: 925px;
+    font-size: 25px;
+    margin-top: 1000px;
     text-align: left;
     margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+footer
+{
+    background-color: #226b8f;
+    color: white;
+    width: 95%;
+    margin-left: 1.75%;
+    padding-left: 25px;
+}
+.footerInfo
+{
+    width: 95%;
+}
+.footerIcons
+{
+    width: 101.85%;
+    float: right;
+    background-color: #226b8f;
+
+}
+.footerIcons a
+{
+    
+    padding: 25px;
+    float: right;
+    background-color: #226b8f;
+}
+
+footer a
+{
+    text-decoration: none;
+    color: white;
+}
+footer a:hover
+{
+    text-decoration: underline;
+    color: #d5ecf7;
+    transition: 0.5s;
 }
