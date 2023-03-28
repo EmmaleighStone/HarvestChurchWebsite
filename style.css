@@ -1,9 +1,11 @@
 /* Fonts */
 
 @font-face {
-    font-family: KaiseiTokuminRegular;
-    src: url(fonts/kaisei_tokumin/kaiseitokuminregular.ttf);
+    font-family: KaiseiTokumin-Regular;
+    src: url(fonts\Kaisei_Tokumin\KaiseiTokumin-Regular.ttf);
 }
+
+/* Navigation bar */
 
 /* Navigation bar */
 
@@ -30,7 +32,7 @@ nav ul li a {
     text-align: center;
     padding: 10px 14px;
     text-decoration: none;
-    font-family: KaiseiTokuminRegular;
+    letter-spacing: 2px;
 }
 
 nav ul li a:hover {
@@ -50,4 +52,253 @@ body {
 .content {
     margin-top: 20px;
     padding: 20px;
+}
+
+h1
+{
+    
+
+}
+.banner
+{
+    background-color: #226b8f;
+    width: 100%;
+    text-align: center;
+    margin-top: 25px;
+    color: white;
+    font-size: 100px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    
+}
+h2
+{
+    width: 94.75%;
+    text-align: center;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    color: #226b8f;
+    font-size: 75px;
+    font-variant: small-caps;
+
+}
+
+.video
+{
+    width: 94.75%;
+    height: 300px;
+    border: #226b8f 2px solid;
+    text-align: center;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: 25px;
+    background-color: #d5ecf7;
+}
+.video button
+{
+    margin-left: 35%;
+    margin-right: 35%;
+    width: 30%;
+    background-color: #226b8f;
+    color: white;
+    border-radius: 5px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: lighter;
+}
+.video button:hover
+{
+    background-color: #4491b8;
+}
+
+.calendar
+{
+    width: 45%;
+    float: left;
+    height: 375px;
+    border: #226b8f 2px solid;
+    text-align: center;
+    margin-left: 2.5%;
+    margin-top: 15px;
+    background-color: #d5ecf7;
+    padding-bottom: 15px;
+    
+}
+.calendar table
+{
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    border: #226b8f 2px solid;
+
+}
+
+.calendar td
+{
+    border: #226b8f 2px solid;
+}
+.agenda
+{
+    width: 45%;
+    float: right;
+    height: 375px;
+    border: #226b8f 2px solid;
+    text-align: right;
+    margin-right: 2.5%;
+    margin-top: 15px;
+    background-color: #d5ecf7;
+    padding-bottom: 15px;
+}
+.agenda h3
+{
+    text-align: center;
+}
+.agenda table
+{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-collapse: collapse;
+}
+.agenda table tr
+{
+    border-bottom: #226b8f 2px solid;
+}
+h3
+{
+    font-size: 25px;
+    font-variant: small-caps;
+    text-decoration: underline;
+}
+
+.prayerForm
+{
+    width: 45%;
+    float: left;
+    border: #226b8f 2px solid;
+    text-align: center;
+    margin-left: 2.5%;
+    margin-top: 15px;
+    background-color: #d5ecf7;
+}
+form h1
+{
+    font-size: 25px;
+    text-align: center;
+    font-variant: small-caps;
+    text-decoration: underline;
+}
+.prayerForm form
+{
+ position: relative;
+ float: left;
+ margin-left: 15%;
+ font-size: 15px;
+ font-weight: 300;
+ margin-bottom: 5px;
+ padding-right: 50px;
+ padding-bottom: 10px;
+ text-align: right;
+}
+form label
+{
+    margin-right: 15px;
+}
+form input
+{
+    margin-bottom: 25px;
+}
+
+
+.questionForm
+{
+    width: 45%;
+    float: right;
+    border: #226b8f 2px solid;
+    text-align: center;
+    margin-right: 2.5%;
+    margin-top: 15px;
+    background-color: #d5ecf7;
+}
+.questionForm form
+{
+position: relative;
+ float: left;
+ margin-left: 20%;
+ font-size: 15px;
+ font-weight: 300;
+ margin-bottom: 5px;
+ padding-right: 50px;
+ padding-bottom: 10px;
+ text-align: right;
+}
+
+
+.questionForm label:nth-child(4)
+{
+   text-align: left;
+}
+form textarea
+{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 25px;
+    margin-top: 15px;
+}
+
+.content
+{
+    margin-bottom: 100px;
+}
+
+*
+{
+    font-family: 'Alkatra';
+}
+
+footer h1
+{
+    font-size: 25px;
+    margin-top: 1000px;
+    text-align: left;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+footer
+{
+    background-color: #226b8f;
+    color: white;
+    width: 95%;
+    margin-left: 1.75%;
+    padding-left: 25px;
+}
+.footerInfo
+{
+    width: 95%;
+}
+.footerIcons
+{
+    width: 101.85%;
+    float: right;
+    background-color: #226b8f;
+
+}
+.footerIcons a
+{
+    
+    padding: 25px;
+    float: right;
+    background-color: #226b8f;
+}
+
+footer a
+{
+    text-decoration: none;
+    color: white;
+}
+footer a:hover
+{
+    text-decoration: underline;
+    color: #d5ecf7;
+    transition: 0.5s;
 }
