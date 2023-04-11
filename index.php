@@ -109,7 +109,7 @@
             </ul>
         </div>
         <div class="prayerForm">
-            <form>
+            <form action="process-prayer-form.php" method="post">
                 <h1>Prayer Request</h1>
                 <label for="fname">First Name:</label>
                 <input type="text" name="first" placeholder="John" id="firstP">
@@ -120,24 +120,26 @@
                 <label for="phone">Phone Number:</label>
                 <input type="text" name="phone" placeholder="(555)-555-5555" id="phoneP">
                 <label for="description">Short Description of Prayer Request: </label>
-                <textarea type="text" name="description" placeholder="type here" id="descriptionP"></textarea>
-                <input type="button" name="submit" id="submitP" value="Submit Prayer Request">
+                <textarea type="text" name="descriptionP" placeholder="type here" id="descriptionP"></textarea>
+                <button>Submit Prayer Request</button>
+                
             </form>
         </div>
         <div class="questionForm">
-            <form>
+            <form action="process-question-form.php" method="post">
                 <h1>Ask Pastor a Question</h1>
                 <label for="fname">First Name:</label>
-                <input type="text" name="first" placeholder="John" id="firstP">
+                <input type="text" name="firstN" placeholder="John" id="firstP">
                 <label for="lname">Last Name:</label>
-                <input type="text" name="last" placeholder="Doe" id="lastP">
+                <input type="text" name="lastN" placeholder="Doe" id="lastP">
                 <label for="email">Email Address:</label>
-                <input type="text" name="email" placeholder="johndoe@email.com" id="emailP">
+                <input type="text" name="emailA" placeholder="johndoe@email.com" id="emailP">
                 <label for="phone">Phone Number:</label>
-                <input type="text" name="phone" placeholder="(555)-555-5555" id="phoneP">
+                <input type="text" name="phoneN" placeholder="(555)-555-5555" id="phoneP">
                 <label for="description">Short Description of Question: </label>
-                <textarea type="text" name="description" placeholder="type here" id="descriptionP"></textarea>
-                <input type="button" name="submit" id="submitP" value="Submit Question to Pastor">
+                <textarea type="text" name="descriptionQ" placeholder="type here" id="descriptionQ"></textarea>
+                <button>Submit Question to Pastor</button>
+                
             </form>
         </div>
     </div>
