@@ -42,13 +42,14 @@
             </ul>
         </nav>
     </header>
-    <div class="content">
+    <div class="contentM">
         <h2>become a member</h2>
-        <h3>Harvest Fellowship Church is a member of the Independent Assemblies non-denominational church which is headquartered in Ada, Oklahoma. As a member in good standing, we adhere to all tenets of faith laid down by the leadership of Independent Assemblies.</h3>
+        <h3 class="intro">Harvest Fellowship Church is a member of the Independent Assemblies non-denominational church which is headquartered in Ada, Oklahoma. As a member in good standing, we adhere to all tenets of faith laid down by the leadership of Independent Assemblies.</h3>
         <div class="memberForm">
             <form>
                 <h1>Become a Member</h1>
-                <h2>General Information</h2>
+                <h3>General Information</h3>
+                <div class="memFormSection">
                 <label for="firstName">First Name:</label>
                 <input type="text" name="firstName" placeholder="John" id="firstNameM">
                 <label for="middleInt">Middle Initial:</label>
@@ -89,8 +90,10 @@
                 <label for="spouseBirthday">Spouse Birthday:</label>
                 <input type="date" name="spouseBirthday" id="spouseBirthdayM"><br>
                 <!--END OF SPOUSE DATA-->
-                <h2>Dependent Information</h2>
+                </div>
+                <h3>Dependent Information</h3>
                 <h6>must be living with applicant</h6>
+                <div class="memFormSection">
                 <label for=" childFirstName1">Child's First Name:</label>
                 <input type="text" name="childFirstName1" placeholder="John" id="childFirstName1M">
                 <label for="childMiddleInt1">Child's Middle Initial:</label>
@@ -139,21 +142,24 @@
                 <label for="childGender4">Female</label>
                 <label for="childBirthday4">Child Birthday:</label>
                 <input type="date" name="childBirthday4" id="childBirthday4M"><br>
-                <h2>Area of Ministry Interest</h2>
+                </div>
+                <h3>Area of Ministry Interest</h3>
                 <h6>check all you're interested in</h6>
+                <div class="memFormSection">
                 <h4>Praise Team Ministry</h4>
                 <label for="Music">Favorite Christian Music Genre(s):</label>
-                <input type="text" name="Music" placeholder="Traditional" id="MusicM">
-                <h5>Do you play an instrument?</h5>
+                <input type="text" name="Music" placeholder="Traditional" id="MusicM"><br>
+                <label for="playInstrument">Do you play an instrument?</label>
                 <input type="radio" name="playInstrument" id="playInstrumentYesM">
                 <label for="playInstrument">Yes</label>
                 <input type="radio" name="playInstrument" id="playInstrumentNoM">
-                <label for="playInstrument">No</label>
+                <label for="playInstrument">No</label><br>
                 <label for="instrument">Instrument(s):</label>
-                <input type="text" name="instrument" placeholder="Piano" id="instrumentM">
+                <input type="text" name="instrument" placeholder="Piano" id="instrumentM"><br>
                 <label for="yearsOfPlaying">Years of Playing Instrument:</label>
                 <input type="number" name="yearsOfPlaying" placeholder="5" id="yearsOfPlayingM"><br>
                 <!--NEED TO ADD FROM HERE DOWN TO DATABASE-->
+
                 <h4>Sunday School Ministry</h4>
                 <input type="checkbox" name="nursery" id="nurseryM">
                 <label for="nursery">Nursury</label>
@@ -241,6 +247,7 @@
                 <label for="reading">Reading</label>
                 <h4>Additional Notes, Concerns, or Comments</h4>
                 <textarea name="notes" id="notesM"></textarea><br>
+                </div>
                 <h6>By clicking the "Submit Member Application" button, I accept and agree with the Statement of Faith of Harvest Church that was presented to me. I also agree to pray for all leadership, serve when called upon, and support the church financially.</h6><br>
                 <input type="button" name="submit" id="submitM" value="Submit Member Application">
             </form>
@@ -262,3 +269,4 @@
     </footer>
 </body>
 </html>
+

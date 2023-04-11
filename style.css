@@ -110,13 +110,12 @@ h1
 }
 h2
 {
-    width: 94.75%;
+    width: 100%;
     text-align: center;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
     color: #226b8f;
     font-size: 75px;
     font-variant: small-caps;
+    margin-top: 0px;
 
 }
 
@@ -150,7 +149,7 @@ h2
 
 .calendar
 {
-    width: 90%;
+    width: 94.75%;
     float: left;
     height: 375px;
     border: #226b8f 2px solid;
@@ -159,48 +158,10 @@ h2
     margin-top: 15px;
     background-color: #d5ecf7;
     padding-bottom: 15px;
+    margin-bottom: 25px;
     
 }
-.calendar table
-{
-    width: 50%;
-    margin-left: 25%;
-    margin-right: 25%;
-    border: #226b8f 2px solid;
 
-}
-
-.calendar td
-{
-    border: #226b8f 2px solid;
-}
-.agenda
-{
-    width: 45%;
-    float: right;
-    height: 375px;
-    border: #226b8f 2px solid;
-    text-align: right;
-    margin-right: 2.5%;
-    margin-top: 15px;
-    background-color: #d5ecf7;
-    padding-bottom: 15px;
-}
-.agenda h3
-{
-    text-align: center;
-}
-.agenda table
-{
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    border-collapse: collapse;
-}
-.agenda table tr
-{
-    border-bottom: #226b8f 2px solid;
-}
 h3
 {
     font-size: 25px;
@@ -341,7 +302,57 @@ footer a:hover
 }
 .desc
 {
-    width: 90%;
+    text-align: center;
+    width: 94.75%;
+    border: #226b8f 2px solid;
     text-align: center;
     margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: 500px;
+    padding-top: 10px;
+    background-color: #d5ecf7;
+}
+.desc p
+{
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+.memFormSection
+{
+    width: 94.75%;
+    float: right;
+    border: #226b8f 2px solid;
+    padding-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: 15px;
+    background-color: #d5ecf7;
+    padding-top: 10px ;
+}
+.contentM h3, h6
+{
+    margin-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+.contentM h3
+{
+    padding-top: 25px;
+}
+.contentM h6
+{
+    padding: 10px;
+}
+.intro
+{
+    text-decoration: none;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 17.5px;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+    margin-bottom: 150px;
+    font-variant: normal;
+
 }
