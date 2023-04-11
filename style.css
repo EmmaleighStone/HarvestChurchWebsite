@@ -145,7 +145,7 @@ h2
 
 .calendar
 {
-    width: 45%;
+    width: 90%;
     float: left;
     height: 375px;
     border: #226b8f 2px solid;
@@ -333,4 +333,10 @@ footer a:hover
     text-decoration: underline;
     color: #d5ecf7;
     transition: 0.5s;
+}
+.desc
+{
+    width: 90%;
+    text-align: center;
+    margin-left: 2.5%;
 }
