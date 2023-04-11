@@ -159,46 +159,7 @@ h2
     margin-bottom: 25px;
     
 }
-.calendar table
-{
-    width: 50%;
-    margin-left: 25%;
-    margin-right: 25%;
-    border: #226b8f 2px solid;
 
-}
-
-.calendar td
-{
-    border: #226b8f 2px solid;
-}
-.agenda
-{
-    width: 45%;
-    float: right;
-    height: 375px;
-    border: #226b8f 2px solid;
-    text-align: right;
-    margin-right: 2.5%;
-    margin-top: 15px;
-    background-color: #d5ecf7;
-    padding-bottom: 15px;
-}
-.agenda h3
-{
-    text-align: center;
-}
-.agenda table
-{
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    border-collapse: collapse;
-}
-.agenda table tr
-{
-    border-bottom: #226b8f 2px solid;
-}
 h3
 {
     font-size: 25px;
@@ -353,4 +314,42 @@ footer a:hover
 {
     margin-left: 2.5%;
     margin-right: 2.5%;
+}
+
+.memFormSection
+{
+    width: 94.75%;
+    float: right;
+    border: #226b8f 2px solid;
+    padding-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: 15px;
+    background-color: #d5ecf7;
+    padding-top: 10px ;
+}
+.contentM h3, h6
+{
+    margin-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+.contentM h3
+{
+    padding-top: 25px;
+}
+.contentM h6
+{
+    padding: 10px;
+}
+.intro
+{
+    text-decoration: none;
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 20px;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+    margin-bottom: 150px;
+
 }
