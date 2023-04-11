@@ -23,11 +23,13 @@ nav ul {
     position: relative;
     top: 0;
     width: fit-content;
+    display: flex;
 }
 
 nav ul li {
     display: inline-block;
     position: relative;
+    width: 200px;
 }
 
 nav ul li a {
@@ -51,7 +53,7 @@ nav ul li a:hover {
 
 /* Dropdown */
 header nav li a::after {
-    content: ' \2193';
+    content: ' \25BE';
   }
   
   header nav li a:only-child::after {
@@ -62,7 +64,7 @@ header nav li a::after {
       display: none;
       position: absolute;
       top: auto;
-      width: fit-content;
+      width: inherit;
       left: 0;
   }
   
