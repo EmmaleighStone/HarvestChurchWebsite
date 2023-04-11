@@ -11,6 +11,8 @@ nav {
     display: inline-block;
     text-align: center;
     background-color: #226b8f;
+    margin-top: 0px;
+    padding-top: 0px;
 }
 
 nav ul {
@@ -95,12 +97,13 @@ h1
 {
     background-color: #226b8f;
     width: 100%;
-    text-align: center;
-    margin-top: 25px;
+    text-align: left;
+    padding-left: 25px;
+    margin: 0px;
     color: white;
     font-size: 100px;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     
 }
 h2
