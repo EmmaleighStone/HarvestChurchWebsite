@@ -32,106 +32,111 @@
             <form>
                 <h1>Become a Member</h1>
                 <h2>General Information</h2>
-                <label for="fname">First Name:</label>
+                <label for="firstName">First Name:</label>
                 <input type="text" name="firstName" placeholder="John" id="firstNameM">
-                <label for="middleIntial">Middle Initial:</label>
-                <input type="text" name="middleInitial" placeholder="J" id="middleInitialM">
-                <label for="lname">Last Name:</label>
+                <label for="middleInt">Middle Initial:</label>
+                <input type="text" name="middleInt" placeholder="J" id="middleInitialM">
+                <label for="lastName">Last Name:</label>
                 <input type="text" name="lastName" placeholder="Doe" id="lastNameM">
-                <label for="birthday">Birthday:</label>
-                <input type="date" name="birthday" id="birthdayM"><br>
-                <label for="streetAddress">Street Address:</label>
-                <input type="text" name="streetAddress" placeholder="111 First Street" id="streetAddressM">
-                <label for="streetAddress">City:</label>
+                <label for="Birthday">Birthday:</label>
+                <input type="date" name="Birthday" id="birthdayM"><br>
+                <label for="StreetAddress">Street Address:</label>
+                <input type="text" name="StreetAddress" placeholder="111 First Street" id="streetAddressM">
+                <label for="city">City:</label>
                 <input type="text" name="city" placeholder="Aurora" id="cityM">
-                <label for="streetAddress">State:</label>
+                <label for="state">State:</label>
                 <input type="text" name="state" placeholder="MO" id="stateM">
-                <label for="streetAddress">Zip Code:</label>
+                <label for="zipCode">Zip Code:</label>
                 <input type="number" name="zipCode" placeholder="11111" id="zipCodeM"><br>
                 <label for="email">Email Address:</label>
                 <input type="text" name="email" placeholder="johndoe@email.com" id="emailM">
+                <!--CHANGE PHONE NUMBER IN DATABASE TO CELL AND HOME PHONE-->
                 <label for="cellPhone">Cell Phone:</label>
-                <input type="text" name="cellPhone" placeholder="(555)-555-5555" id="cellPhoneM">
+                <input type="number" name="cellPhone" placeholder="(555)-555-5555" id="cellPhoneM">
                 <label for="homePhone">Home Phone:</label>
-                <input type="text" name="homePhone" placeholder="(555)-555-5555" id="homePhoneM"><br>
-                <input type="radio" name="married" id="marriedM">
-                <label for="marriedY">Married</label>
-                <input type="radio" name="married" id="singleM">
-                <label for="marriedN">Single</label>
-                <label for="wedDate">Wedding Anniversary:</label>
-                <input type="date" name="wedDate" id="wedDateM"><br>
-                <label for="spouseFName">Spouse First Name:</label>
-                <input type="text" name="spouseFName" placeholder="Jane" id="spouseFNameM">
-                <label for="spouseMiddleInitial">Spouse Middle Initial:</label>
-                <input type="text" name="spouseMiddleInitial" placeholder="J" id="spouseMiddleInitialM">
-                <label for="spouseLName">Spouse Last Name:</label>
-                <input type="text" name="spouseLName" placeholder="Doe" id="spouseLNameM">
+                <input type="number" name="homePhone" placeholder="(555)-555-5555" id="homePhoneM"><br>
+                <!--END OF PHONE -->
+                <input type="radio" name="status" id="marriedM">
+                <label for="status">Married</label>
+                <input type="radio" name="status" id="singleM">
+                <label for="status">Single</label>
+                <label for="anniversary">Wedding Anniversary:</label>
+                <input type="date" name="anniversary" id="wedDateM"><br>
+                <!--ADD SPOUSE DATA TO DATABASE-->
+                <label for="spouseFirstName">Spouse First Name:</label>
+                <input type="text" name="spouseFirstName" placeholder="Jane" id="spouseFirstNameM">
+                <label for="spouseMiddleInt">Spouse Middle Initial:</label>
+                <input type="text" name="spouseMiddleInt" placeholder="J" id="spouseMiddleInitialM">
+                <label for="spouseLastName">Spouse Last Name:</label>
+                <input type="text" name="spouseLastName" placeholder="Doe" id="spouseLNameM">
                 <label for="spouseBirthday">Spouse Birthday:</label>
                 <input type="date" name="spouseBirthday" id="spouseBirthdayM"><br>
+                <!--END OF SPOUSE DATA-->
                 <h2>Dependent Information</h2>
                 <h6>must be living with applicant</h6>
-                <label for=" child1FName">Child's First Name:</label>
-                <input type="text" name="child1FName" placeholder="John" id="child1FNameM">
-                <label for="child1MiddleInitial">Child's Middle Initial:</label>
-                <input type="text" name="child1MiddleInitial" placeholder="J" id="child1MiddleInitialM">
-                <label for="child1LName">Child's Last Name:</label>
-                <input type="text" name="child1LName" placeholder="Doe" id="child1LNameM">
-                <input type="radio" name="child1Gender" id="child1GenderMaleM">
-                <label for="child1Gender">Male</label>
-                <input type="radio" name="child1Gender" id="child1GenderFemaleM">
-                <label for="child1Gender">Female</label>
-                <label for="child1Birthday">Child Birthday:</label>
-                <input type="date" name="child1Birthday" id="child1BirthdayM"><br>
-                <label for=" child2FName">Child's First Name:</label>
-                <input type="text" name="child2FName" placeholder="John" id="child2FNameM">
-                <label for="child2MiddleInitial">Child's Middle Initial:</label>
-                <input type="text" name="child2MiddleInitial" placeholder="J" id="child2MiddleInitialM">
-                <label for="child2LName">Child's Last Name:</label>
-                <input type="text" name="child2LName" placeholder="Doe" id="child2LNameM">
-                <input type="radio" name="child2Gender" id="child2GenderMaleM">
-                <label for="child2Gender">Male</label>
-                <input type="radio" name="child2Gender" id="child2GenderFemaleM">
-                <label for="child2Gender">Female</label>
-                <label for="child2Birthday">Child Birthday:</label>
-                <input type="date" name="child2Birthday" id="child2BirthdayM"><br>
-                <label for=" child3FName">Child's First Name:</label>
-                <input type="text" name="child3FName" placeholder="John" id="child3FNameM">
-                <label for="child3MiddleInitial">Child's Middle Initial:</label>
-                <input type="text" name="child3MiddleInitial" placeholder="J" id="child3MiddleInitialM">
-                <label for="child3LName">Child's Last Name:</label>
-                <input type="text" name="child3LName" placeholder="Doe" id="child3LNameM">
-                <input type="radio" name="child3Gender" id="child3GenderMaleM">
-                <label for="child3Gender">Male</label>
-                <input type="radio" name="child3Gender" id="child3GenderFemaleM">
-                <label for="child3Gender">Female</label>
-                <label for="child3Birthday">Child Birthday:</label>
-                <input type="date" name="child3Birthday" id="child3BirthdayM"><br>
-                <label for=" child4FName">Child's First Name:</label>
-                <input type="text" name="child4FName" placeholder="John" id="child4FNameM">
-                <label for="child4MiddleInitial">Child's Middle Initial:</label>
-                <input type="text" name="child4MiddleInitial" placeholder="J" id="child4MiddleInitialM">
-                <label for="child4LName">Child's Last Name:</label>
-                <input type="text" name="child4LName" placeholder="Doe" id="child4LNameM">
-                <input type="radio" name="child4Gender" id="child4GenderMaleM">
-                <label for="child4Gender">Male</label>
-                <input type="radio" name="child4Gender" id="child4GenderFemaleM">
-                <label for="child4Gender">Female</label>
-                <label for="child4Birthday">Child Birthday:</label>
-                <input type="date" name="child4Birthday" id="child4BirthdayM"><br>
+                <label for=" childFirstName1">Child's First Name:</label>
+                <input type="text" name="childFirstName1" placeholder="John" id="childFirstName1M">
+                <label for="childMiddleInt1">Child's Middle Initial:</label>
+                <input type="text" name="childMiddleInt1" placeholder="J" id="childMiddleInt1M">
+                <label for="childLastName1">Child's Last Name:</label>
+                <input type="text" name="childLastName1" placeholder="Doe" id="childLastName1M">
+                <input type="radio" name="childGender1" id="childGender1MaleM">
+                <label for="childGender1">Male</label>
+                <input type="radio" name="childGender1" id="childGender1FemaleM">
+                <label for="childGender1">Female</label>
+                <label for="childBirthday1">Child Birthday:</label>
+                <input type="date" name="childBirthday1" id="childBirthday1M"><br>
+                <label for=" childFirstName2">Child's First Name:</label>
+                <input type="text" name="childFirstName2" placeholder="John" id="childFirstName2M">
+                <label for="childMiddleInt2">Child's Middle Initial:</label>
+                <input type="text" name="childMiddleInt2" placeholder="J" id="childMiddleInt2M">
+                <label for="childLastName2">Child's Last Name:</label>
+                <input type="text" name="childLastName2" placeholder="Doe" id="childLastName2M">
+                <input type="radio" name="childGender2" id="childGender2MaleM">
+                <label for="childGender2">Male</label>
+                <input type="radio" name="childGender2" id="childGender2FemaleM">
+                <label for="childGender2">Female</label>
+                <label for="childBirthday2">Child Birthday:</label>
+                <input type="date" name="childBirthday2" id="childBirthday2M"><br>
+                <label for=" childFirstName3">Child's First Name:</label>
+                <input type="text" name="childFirstName3" placeholder="John" id="childFirstName3M">
+                <label for="childMiddleInt3">Child's Middle Initial:</label>
+                <input type="text" name="childMiddleInt3" placeholder="J" id="childMiddleInt3M">
+                <label for="childLastName3">Child's Last Name:</label>
+                <input type="text" name="childLastName3" placeholder="Doe" id="childLastName3M">
+                <input type="radio" name="childGender3" id="childGender3MaleM">
+                <label for="childGender3">Male</label>
+                <input type="radio" name="childGender3" id="childGender3FemaleM">
+                <label for="childGender3">Female</label>
+                <label for="childBirthday3">Child Birthday:</label>
+                <input type="date" name="childBirthday3" id="childBirthday3M"><br>
+                <label for=" childFirstName4">Child's First Name:</label>
+                <input type="text" name="childFirstName4" placeholder="John" id="childFirstName4M">
+                <label for="childMiddleInt4">Child's Middle Initial:</label>
+                <input type="text" name="childMiddleInt4" placeholder="J" id="childMiddleInt4M">
+                <label for="childLastName4">Child's Last Name:</label>
+                <input type="text" name="childLastName4" placeholder="Doe" id="childLastName4M">
+                <input type="radio" name="childGender4" id="childGender4MaleM">
+                <label for="childGender4">Male</label>
+                <input type="radio" name="childGender4" id="childGender4FemaleM">
+                <label for="childGender4">Female</label>
+                <label for="childBirthday4">Child Birthday:</label>
+                <input type="date" name="childBirthday4" id="childBirthday4M"><br>
                 <h2>Area of Ministry Interest</h2>
                 <h6>check all you're interested in</h6>
                 <h4>Praise Team Ministry</h4>
-                <label for="praiseTeamGenre">Favorite Christian Music Genre(s):</label>
-                <input type="text" name="praiseTeamGenre" placeholder="Traditional" id="praiseTeamGenreM">
+                <label for="Music">Favorite Christian Music Genre(s):</label>
+                <input type="text" name="Music" placeholder="Traditional" id="MusicM">
                 <h5>Do you play an instrument?</h5>
-                <input type="radio" name="praiseTeamPlayInstrument" id="praiseTeamPlayInstrumentYM">
-                <label for="praiseTeamPlayInstrument">Yes</label>
-                <input type="radio" name="praiseTeamPlayInstrument" id="praiseTeamPlayInstrumentNM">
-                <label for="praiseTeamPlayInstrument">No</label>
-                <label for="praiseTeamInstrument">Instrument(s):</label>
-                <input type="text" name="praiseTeamInstrument" placeholder="Piano" id="praiseTeamInstrumentM">
-                <label for="praiseTeamYears">Years of Playing Instrument:</label>
-                <input type="number" name="praiseTeamYears" placeholder="5" id="praiseTeamYearsM"><br>
+                <input type="radio" name="playInstrument" id="playInstrumentYesM">
+                <label for="playInstrument">Yes</label>
+                <input type="radio" name="playInstrument" id="playInstrumentNoM">
+                <label for="playInstrument">No</label>
+                <label for="instrument">Instrument(s):</label>
+                <input type="text" name="instrument" placeholder="Piano" id="instrumentM">
+                <label for="yearsOfPlaying">Years of Playing Instrument:</label>
+                <input type="number" name="yearsOfPlaying" placeholder="5" id="yearsOfPlayingM"><br>
+                <!--NEED TO ADD FROM HERE DOWN TO DATABASE-->
                 <h4>Sunday School Ministry</h4>
                 <input type="checkbox" name="nursery" id="nurseryM">
                 <label for="nursery">Nursury</label>
