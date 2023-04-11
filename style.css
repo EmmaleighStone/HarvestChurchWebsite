@@ -100,13 +100,16 @@ h1
     background-color: #226b8f;
     width: 100%;
     text-align: left;
-    padding-left: 25px;
     margin: 0px;
     color: white;
     font-size: 100px;
     padding-top: 0px;
     padding-bottom: 0px;
     
+}
+.banner h1
+{
+    padding-left: 25px;
 }
 h2
 {
