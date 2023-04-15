@@ -264,30 +264,34 @@ footer h1
     text-align: left;
     margin-bottom: 0px;
     padding-bottom: 0px;
+    padding-top: 25px;
 }
 footer
 {
     background-color: #226b8f;
     color: white;
-    width: 95%;
-    margin-left: 1.75%;
-    padding-left: 25px;
+    width: 100%;
 }
 .footerInfo
 {
-    width: 95%;
+    width: 100%;
+}
+.footerInfo h1, a, address
+{
+    padding-left: 25px;
 }
 .footerIcons
 {
-    width: 101.85%;
+    width: 100%;
     float: right;
     background-color: #226b8f;
+    
 
 }
 .footerIcons a
 {
-    
-    padding: 25px;
+    padding-bottom: 25px;
+    padding-right: 25px;
     float: right;
     background-color: #226b8f;
 }
