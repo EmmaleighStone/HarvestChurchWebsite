@@ -26,13 +26,15 @@
         var calendar = new FullCalendar.Calendar(calendarEl, {
           
          buttonText:{
-            listWeek: "event list"
+            listWeek: "agenda",
+            dayGridMonth: "calendar"
+            
 
          },
           headerToolbar: {
             left: 'prev,next,today',
             center: 'title',
-            right: 'dayGridMonth,timeGridWeek,listWeek'
+            right: 'dayGridMonth,listWeek'
         } , 
           initialView: 'dayGridMonth',
           height: 545,
