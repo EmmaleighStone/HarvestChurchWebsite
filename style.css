@@ -70,6 +70,7 @@ header nav li a::after {
   
   header nav ul li:hover ul {
       display: inherit;
+      z-index: 99;
   }
   
   header nav ul ul li{
@@ -80,7 +81,14 @@ header nav li a::after {
   }
 
 /* Body */
-
+html {
+    width: 100%;
+}
+*
+{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
 body {
     margin: 0;
 }
@@ -254,7 +262,7 @@ form textarea
 
 .content
 {
-    
+    padding-bottom: 0px;
 }
 
 *
@@ -274,22 +282,33 @@ footer
     background-color: #226b8f;
     color: white;
     width: 100%;
+    display: inline-block;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    position: relative;
+    bottom:0;
 }
 .footerInfo
 {
-    width: 100%;
+    float: left;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }
 .footerIcons
 {
-    width: 100%;
+    
     float: right;
     background-color: #226b8f;
-
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }
 .footerIcons a
 {
     
     padding: 25px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
     float: right;
     background-color: #226b8f;
 }
@@ -316,6 +335,7 @@ footer a:hover
     margin-top: 10px;
     padding-top: 10px;
     background-color: #d5ecf7;
+    display: inline-block;
     /*Necessary for statement of faith - ave helpppppp*/
 }
 .desc p
@@ -334,6 +354,7 @@ footer a:hover
     margin-top: 15px;
     background-color: #d5ecf7;
     padding-top: 10px ;
+    height: fit-content;
 }
 .contentM h3, h6
 {
