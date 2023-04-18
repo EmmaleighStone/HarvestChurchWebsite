@@ -150,11 +150,11 @@ h2
     background-color: #4491b8;
 }
 
-.calendar
+#calendar
 {
     width: 94.75%;
     float: left;
-    height: 375px;
+    height: 400px;
     border: #226b8f 2px solid;
     text-align: center;
     margin-left: 2.5%;
@@ -162,6 +162,8 @@ h2
     background-color: #d5ecf7;
     padding-bottom: 15px;
     margin-bottom: 25px;
+    padding-left: 15%;
+    padding-right: 15%;
     
 }
 
@@ -363,3 +365,4 @@ footer a:hover
     font-variant: normal;
 
 }
+
