@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +13,38 @@
     
     <link rel="stylesheet" href="style.css">
     <title>Harvest Church - Aurora, MO</title>
+    
+  <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.5/index.global.min.js'></script>
+  <script src="
+https://cdn.jsdelivr.net/npm/@fullcalendar/google-calendar@6.1.5/index.global.min.js
+"></script>  
+
+
+    <script type="module" >
+        
+      document.addEventListener('DOMContentLoaded', function() {
+        
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          
+          initialView: 'dayGridMonth',
+          height: 545,
+           
+          googleCalendarApiKey: 'AIzaSyCuiTnRnHptu4IItU_SYqdt7NRZmYCi1r8',
+          events: {
+            googleCalendarId: '554b9014612148196ee611997104b0d73df6bbbb54304cc38266fc9a12c05d00@group.calendar.google.com'
+          }
+            
+        });
+        
+        calendar.render();
+        calendar.updateSize()
+        calendar.setOption('contentHeight', 50);
+        //AIzaSyCuiTnRnHptu4IItU_SYqdt7NRZmYCi1r8
+        //554b9014612148196ee611997104b0d73df6bbbb54304cc38266fc9a12c05d00@group.calendar.google.com
+      });
+
+    </script>
     </head>
     <header>
         <h1 class="banner">Harvest Church</h1>
@@ -47,10 +81,7 @@
             <video></video>
             <button onclick="window.location.href='https://youtube.com' ;">Watch more on YouTube!</button>
         </div>
-        <div class="calendar">
-            <h3 style="margin-top: 5; margin: 0;">Calendar</h3>
-            <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23616161&ctz=America%2FChicago&showCalendars=0&title=Harvest%20Church&showPrint=0&showNav=0&showDate=1&showTz=0&src=bWlrZXkuc2F1Y2VkbzhAZ21haWwuY29t&src=NTU0YjkwMTQ2MTIxNDgxOTZlZTYxMTk5NzEwNGIwZDczZGY2YmJiYjU0MzA0Y2MzODI2NmZjOWExMmMwNWQwMEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%237986CB&color=%23C0CA33&color=%230B8043" style="border:solid 1px #777" width="400" height="325" frameborder="0" scrolling="no"></iframe>
-        </div>
+         <div id='calendar'></div>
         <div class="prayerForm">
             <form>
                 <h1>Prayer Request</h1>
