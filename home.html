@@ -20,7 +20,7 @@ https://cdn.jsdelivr.net/npm/@fullcalendar/google-calendar@6.1.5/index.global.mi
 "></script>  
 
 
-    <script type="module" >
+    <script>
         
       document.addEventListener('DOMContentLoaded', function() {
         
@@ -33,13 +33,21 @@ https://cdn.jsdelivr.net/npm/@fullcalendar/google-calendar@6.1.5/index.global.mi
           googleCalendarApiKey: 'AIzaSyCuiTnRnHptu4IItU_SYqdt7NRZmYCi1r8',
           events: {
             googleCalendarId: '554b9014612148196ee611997104b0d73df6bbbb54304cc38266fc9a12c05d00@group.calendar.google.com'
-          }
+          },
+            eventClick: function(info) {
+            var eventObj = info.event;
+
             
+        alert('Clicked ' + eventObj.title);
+        eventObj.url = '0'
+      },
         });
         
         calendar.render();
         calendar.updateSize()
         calendar.setOption('contentHeight', 50);
+
+        
         //AIzaSyCuiTnRnHptu4IItU_SYqdt7NRZmYCi1r8
         //554b9014612148196ee611997104b0d73df6bbbb54304cc38266fc9a12c05d00@group.calendar.google.com
       });
