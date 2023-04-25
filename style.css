@@ -20,8 +20,7 @@ nav ul {
     margin: 0;
     padding: 0;
     background-color: #226b8f;
-    position: -webkit-sticky;
-    position: sticky;
+    position: relative;
     top: 0;
     width: fit-content;
     display: flex;
