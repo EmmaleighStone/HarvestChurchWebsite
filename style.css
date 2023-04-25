@@ -20,7 +20,8 @@ nav ul {
     margin: 0;
     padding: 0;
     background-color: #226b8f;
-    position: relative;
+    position: -webkit-sticky;
+    position: sticky;
     top: 0;
     width: fit-content;
     display: flex;
@@ -98,11 +99,7 @@ body {
     padding: 20px;
 }
 
-h1
-{
-    
 
-}
 .banner
 {
     background-color: #226b8f;
