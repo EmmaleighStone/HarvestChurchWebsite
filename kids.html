@@ -11,15 +11,64 @@
     
     <link rel="stylesheet" href="style.css">
     <title>Harvest Church - Aurora, MO</title>
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.5/index.global.min.js'></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/google-calendar@6.1.5/index.global.min.js"></script>  
+
+
+    <script>
+        
+      document.addEventListener('DOMContentLoaded', function() {
+        
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          
+         buttonText:{
+            listWeek: "agenda",
+            dayGridMonth: "calendar"
+            
+
+         },
+          headerToolbar: {
+            left: 'prev,next,today',
+            center: 'title',
+            right: 'dayGridMonth,listWeek'
+        } , 
+          initialView: 'dayGridMonth',
+          height: 550,
+         
+          googleCalendarApiKey: 'AIzaSyAZ4liF0N4byVoOhbIKRMJpVvKxTxQtzyc',
+          events: {
+            googleCalendarId: 'd0a0a003e2c80d126adc82ad413df05a21d6d71a3cfb5b756af1228ea31acb9e@group.calendar.google.com'
+          },
+            eventClick: function(info) {
+            var eventObj = info.event;
+                
+            eventObj.googleCalendarId = " ";    
+            alert('Clicked ' + eventObj.title);
+            
+      },
+        });
+        
+        calendar.render();
+        calendar.updateSize()
+        calendar.setOption('contentHeight', 50);
+        
+        
+        //AIzaSyCuiTnRnHptu4IItU_SYqdt7NRZmYCi1r8
+        //554b9014612148196ee611997104b0d73df6bbbb54304cc38266fc9a12c05d00@group.calendar.google.com
+      });
+
+    </script>
     </head>
     <header>
-        <h1 class="banner">Harvest Church</h1>
+        <div class="banner">
+            <img src="images/logo/logo.png">
         <nav>
             <ul>
                 <li><a href="home.html">Home</a></li>
                 <li><a>About</a>
                     <ul>
-                        <li><a href="history.html">History</a></li>
+                        <li><a href="history.html">Pastors</a></li>
                         <li><a href="vision.html">Vision</a></li>
                         <li><a href="faith.html">Statement of Faith</a></li>
                     </ul></li>
@@ -40,30 +89,47 @@
                 <li><a href="memberForm.html">Become A Member</a></li>
             </ul>
         </nav>
+        </div>
     </header>
     <div class="content">
-        <h2>harvest kids</h2>
-        
-        <div class="calendar">
-            <h3 style="margin-top: 5; margin: 0;">Calendar</h3>
-            <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23616161&ctz=America%2FChicago&showCalendars=0&title=Harvest%20Church&showPrint=0&showNav=0&showDate=1&showTz=0&src=bWlrZXkuc2F1Y2VkbzhAZ21haWwuY29t&src=NTU0YjkwMTQ2MTIxNDgxOTZlZTYxMTk5NzEwNGIwZDczZGY2YmJiYjU0MzA0Y2MzODI2NmZjOWExMmMwNWQwMEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%237986CB&color=%23C0CA33&color=%230B8043" style="border:solid 1px #777" width="400" height="325" frameborder="0" scrolling="no"></iframe>
-        </div>
-        
         <div class="desc">
-            <h3>Harvest Kids</h3>
+            <h2>Harvest Kids</h2>
+            <p style="font-style: italic;">We have something for all ages at Harvest Church! We believe reaching the youngest members of our congregation is as important as the oldest. While adults are being taught from The Word, children will be in Kid's Church learning about the Bible.</p>
+            <div class="kids">
+                
             <div class="nursery">
-                <h4>Nursery</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quo, sit quisquam deserunt vero fugit recusandae alias doloremque eaque illum! Deserunt aliquam omnis voluptatibus incidunt recusandae harum corrupti vel voluptas!</p>
+                <h3>Nursery</h3>
+                <p>Ages: 0 years old - 2 years old<br>
+                Meet: back of sanctuary</p>
             </div>
             <div class="sprouts">
-                <h4>Harvest Sprouts</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quo, sit quisquam deserunt vero fugit recusandae alias doloremque eaque illum! Deserunt aliquam omnis voluptatibus incidunt recusandae harum corrupti vel voluptas!</p>
-            </div>
+                <h3>Harvest Sprouts</h3>
+                <p>Ages: 3 years old - 5 years old<br>
+                    Meet: behind sanctuary
+                </p>
+                </div>
             <div class="roots">
-                <h4>Harvest Roots</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quo, sit quisquam deserunt vero fugit recusandae alias doloremque eaque illum! Deserunt aliquam omnis voluptatibus incidunt recusandae harum corrupti vel voluptas!</p>
+                <h3>Harvest Roots</h3>
+                <p>Ages: 6 years old - 12 years old<br>
+                    Meet: in gymnasium
+                </p>
             </div>
+            <div>
+                <img src="images/kids/image6.jpg">
+                </div>
+                <div>
+                <img src="images/kids/image5.jpg">
+                </div>
+                <div>
+                <img src="images/kids/image4.jpg">
+                </div>
         </div>
+        </div>
+        <div class="calendar">
+            <h2>harvest kids calendar</h2>
+        <div id='calendar'></div>
+        </div>
+        
     </div>
     <footer>
         <div class="footerInfo">
@@ -73,11 +139,20 @@
             <a href="tel:4176782310" target="_blank">(417) 678-2310</a><br>
             <a href="mailto:harvest.aurora.mo@gmail.com" target="_blank">harvestchurch.aurora.mo@gmail.com</a>
         </div>
+        <div class="footerGive">
+            <h5>Want to give to the church? Click the button below!</h5>
+            <button class="tithely-give-btn" style="background-color: #b1ded1;font-family: inherit;font-weight: bold;font-size: 19px; padding: 15px 70px; border-radius: 4px; cursor: pointer; background-image: none; color: #083c2c; text-shadow: none; display: inline-block; float: none; border: none;" data-church-id="375703">Give</button>
+            <script src="https://tithe.ly/widget/v3/give.js?3"></script>
+            <script>
+                var tw = create_tithely_widget();
+                </script>
+        </div>
         <div class="footerIcons">
+            <h5>Check us out on social media!</h5>
             <a href="https://www.facebook.com/profile.php?id=100064870802491" target="_blank" class="fa fa-facebook"></a>
             <a href="https://www.instagram.com/harvestchurch_aurora/" target="_blank" class="fa fa-instagram"></a>
-            <a href="https://get.tithe.ly/download-tithely-app" target="_blank" class="fa-solid fa-money-bill"></a>
         </div>
     </footer>
 </body>
 </html>
+
