@@ -32,11 +32,14 @@ $host = "localhost";
     if ( ! mysqli_stmt_prepare($stmt, $sql)) {
         die(mysqli_error($db));
     }
+    else{
+        header("location:home.html");
+    }
 
     mysqli_stmt_bind_param($stmt, "sssis", $firstName, $lastName, $email, $phoneNumber, $prayerDescription);
 
     mysqli_stmt_execute($stmt);
 
-    echo("record saved!");
+    alert("record saved!");
     
 ?>
