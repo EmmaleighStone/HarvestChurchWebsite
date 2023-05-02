@@ -46,8 +46,8 @@
             eventClick: function(info) {
             var eventObj = info.event;
                 
-            eventObj.googleCalendarId = " ";    
-            alert('Clicked ' + eventObj.title);
+              
+            alert('Taking you to the ' + '(' + eventObj.title + ')' + ' event in google calendars' );
             
       },
         });
@@ -57,12 +57,12 @@
         calendar.setOption('contentHeight', 50);
         
         
-        //AIzaSyCuiTnRnHptu4IItU_SYqdt7NRZmYCi1r8
-        //554b9014612148196ee611997104b0d73df6bbbb54304cc38266fc9a12c05d00@group.calendar.google.com
+        
       });
 
     </script>
     </head>
+    <body>
     <header>
         <h1 class="banner">Harvest Church</h1>
         <nav>
@@ -95,7 +95,6 @@
     <div class="content">
         <h2>home</h2>
         <div class="video">
-            <video></video>
             <button onclick="window.location.href='https://youtube.com' ;">Watch more on YouTube!</button>
         </div>
          <div id='calendar'></div>
