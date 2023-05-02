@@ -11,15 +11,64 @@
     
     <link rel="stylesheet" href="style.css">
     <title>Harvest Church - Aurora, MO</title>
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.5/index.global.min.js'></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/google-calendar@6.1.5/index.global.min.js"></script>  
+
+
+    <script>
+        
+      document.addEventListener('DOMContentLoaded', function() {
+        
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          
+         buttonText:{
+            listWeek: "agenda",
+            dayGridMonth: "calendar"
+            
+
+         },
+          headerToolbar: {
+            left: 'prev,next,today',
+            center: 'title',
+            right: 'dayGridMonth,listWeek'
+        } , 
+          initialView: 'dayGridMonth',
+          height: 550,
+         
+          googleCalendarApiKey: 'AIzaSyAZ4liF0N4byVoOhbIKRMJpVvKxTxQtzyc',
+          events: {
+            googleCalendarId: 'ef54c0c988ffc8253e490299d0c77e3e92ab9b0d5dc3105d9bf77cdaa70f4aa9@group.calendar.google.com'
+          },
+            eventClick: function(info) {
+            var eventObj = info.event;
+                
+            eventObj.googleCalendarId = " ";    
+            alert('Clicked ' + eventObj.title);
+            
+      },
+        });
+        
+        calendar.render();
+        calendar.updateSize()
+        calendar.setOption('contentHeight', 50);
+        
+        
+        //AIzaSyCuiTnRnHptu4IItU_SYqdt7NRZmYCi1r8
+        //554b9014612148196ee611997104b0d73df6bbbb54304cc38266fc9a12c05d00@group.calendar.google.com
+      });
+
+    </script>
     </head>
     <header>
-        <h1 class="banner">Harvest Church</h1>
+        <div class="banner">
+            <img src="images/logo/logo.png">
         <nav>
             <ul>
                 <li><a href="home.html">Home</a></li>
                 <li><a>About</a>
                     <ul>
-                        <li><a href="history.html">History</a></li>
+                        <li><a href="history.html">Pastors</a></li>
                         <li><a href="vision.html">Vision</a></li>
                         <li><a href="faith.html">Statement of Faith</a></li>
                     </ul></li>
@@ -40,25 +89,36 @@
                 <li><a href="memberForm.html">Become A Member</a></li>
             </ul>
         </nav>
+        </div>
     </header>
     <div class="content">
-        <h2>harvest recovery & addiction</h2>
         
-        <div class="calendar">
-            <h3 style="margin-top: 5; margin: 0;">Calendar</h3>
-            <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23616161&ctz=America%2FChicago&showCalendars=0&title=Harvest%20Church&showPrint=0&showNav=0&showDate=1&showTz=0&src=bWlrZXkuc2F1Y2VkbzhAZ21haWwuY29t&src=NTU0YjkwMTQ2MTIxNDgxOTZlZTYxMTk5NzEwNGIwZDczZGY2YmJiYjU0MzA0Y2MzODI2NmZjOWExMmMwNWQwMEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%237986CB&color=%23C0CA33&color=%230B8043" style="border:solid 1px #777" width="400" height="325" frameborder="0" scrolling="no"></iframe>
-        </div>
+        
+        
         
         <div class="desc">
-            <h3>Harvest Helps</h3>
-            <div class="helps">
-                <h4>Harvest Helps</h4>
-                <p>For more than 10 years, Harvest Church has been reaching out to those in our community suffering from addiction. We offer 2 different meetings every week for those who want to be free from substance abuse of all kinds. Many have found victory over addiction through the teaching of God’s Word. If you have been court-ordered to attend meetings, our leaders sign papers every week.</p>    
+            <h2>harvest recovery & addiction</h2>
+            <div class="addict">
+                <div class="helps">
+                    <h3>Harvest Helps</h3>
+                    <p style="font-style: italic;">For more than 10 years, Harvest Church has been reaching out to those in our community suffering from addiction. We offer 2 different meetings every week for those who want to be free from substance abuse of all kinds. Many have found victory over addiction through the teaching of God’s Word. If you have been court-ordered to attend meetings, our leaders sign papers every week.</p>    
+                </div>
+                <div class="soberHouse">
+                    <h3>Harvest Helps Sober Living House</h3>
+                    <p style="font-style: italic;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quo, sit quisquam deserunt vero fugit recusandae alias doloremque eaque illum! Deserunt aliquam omnis voluptatibus incidunt recusandae harum corrupti vel voluptas!</p>
+                </div>
+                <div>
+                    <img src="images/addict/addict1.jpg">
+                </div>
+                <div>
+                    <img src="images/addict/addict2.jpg">
+                </div>
             </div>
-            <div class="soberHouse">
-                <h4>Harvest Helps Sober Living House</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quo, sit quisquam deserunt vero fugit recusandae alias doloremque eaque illum! Deserunt aliquam omnis voluptatibus incidunt recusandae harum corrupti vel voluptas!</p>
-            </div>
+            
+        </div>
+        <div class="calendar">
+            <h2>harvest recovery & addiction calendar</h2>
+        <div id='calendar'></div>
         </div>
     </div>
     <footer>
@@ -69,11 +129,20 @@
             <a href="tel:4176782310" target="_blank">(417) 678-2310</a><br>
             <a href="mailto:harvest.aurora.mo@gmail.com" target="_blank">harvestchurch.aurora.mo@gmail.com</a>
         </div>
+        <div class="footerGive">
+            <h5>Want to give to the church? Click the button below!</h5>
+            <button class="tithely-give-btn" style="background-color: #b1ded1;font-family: inherit;font-weight: bold;font-size: 19px; padding: 15px 70px; border-radius: 4px; cursor: pointer; background-image: none; color: #083c2c; text-shadow: none; display: inline-block; float: none; border: none;" data-church-id="375703">Give</button>
+            <script src="https://tithe.ly/widget/v3/give.js?3"></script>
+            <script>
+                var tw = create_tithely_widget();
+                </script>
+        </div>
         <div class="footerIcons">
+            <h5>Check us out on social media!</h5>
             <a href="https://www.facebook.com/profile.php?id=100064870802491" target="_blank" class="fa fa-facebook"></a>
             <a href="https://www.instagram.com/harvestchurch_aurora/" target="_blank" class="fa fa-instagram"></a>
-            <a href="https://get.tithe.ly/download-tithely-app" target="_blank" class="fa-solid fa-money-bill"></a>
         </div>
     </footer>
 </body>
 </html>
+
