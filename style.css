@@ -401,7 +401,6 @@ footer
     display: flex;
     justify-content: space-around;
     align-content: flex-end;
-    border-radius: 15px;
 }
 .footerInfo
 {
