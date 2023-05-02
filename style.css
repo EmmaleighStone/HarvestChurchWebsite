@@ -99,6 +99,7 @@ header nav li a::after {
   
   header nav ul li:hover ul {
       display: inherit;
+      z-index: 999;
   }
   
   header nav ul ul li{
