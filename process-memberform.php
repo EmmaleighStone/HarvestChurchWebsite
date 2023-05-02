@@ -267,13 +267,13 @@ if(! $result )
 } 
 else{
     header("location:home.html");
+    alert("Thank you!");
 }
 
 
 
 
-echo("record saved!");
-echo("Thank you!");
+
 
 
 ?>
