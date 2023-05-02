@@ -120,14 +120,10 @@ body {
 .content {
     margin-top: 20px;
     padding: 20px;
-    padding-bottom: 17rem;    /* Footer height */
+    padding-bottom: 2rem;    /* Footer height */
 }
 
-h1
-{
-    
 
-}
 /*.banner
 {
     background-color: #226b8f;
@@ -375,10 +371,7 @@ form textarea
     margin-top: 15px;
 }
 
-.content
-{
-    
-}
+
 
 *
 {
