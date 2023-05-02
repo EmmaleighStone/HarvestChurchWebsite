@@ -48,103 +48,103 @@
         <h2>become a member</h2>
         <h3 class="intro">Harvest Fellowship Church is a member of the Independent Assemblies non-denominational church which is headquartered in Ada, Oklahoma. As a member in good standing, we adhere to all tenets of faith laid down by the leadership of Independent Assemblies.</h3>
         <div class="memberForm">
-            <form>
+            <form action="process-memberForm.php" method="post">
                 <h1>Become a Member</h1>
                 <h3>General Information</h3>
                 <div class="memFormSection">
-                <label for="firstName">First Name:</label>
-                <input type="text" name="firstName" placeholder="John" id="firstNameM">
-                <label for="middleInt">Middle Initial:</label>
-                <input type="text" name="middleInt" placeholder="J" id="middleInitialM">
-                <label for="lastName">Last Name:</label>
-                <input type="text" name="lastName" placeholder="Doe" id="lastNameM">
-                <label for="Birthday">Birthday:</label>
-                <input type="date" name="Birthday" id="birthdayM"><br>
-                <label for="StreetAddress">Street Address:</label>
-                <input type="text" name="StreetAddress" placeholder="111 First Street" id="streetAddressM">
-                <label for="city">City:</label>
-                <input type="text" name="city" placeholder="Aurora" id="cityM">
-                <label for="state">State:</label>
-                <input type="text" name="state" placeholder="MO" id="stateM">
-                <label for="zipCode">Zip Code:</label>
-                <input type="number" name="zipCode" placeholder="11111" id="zipCodeM"><br>
-                <label for="email">Email Address:</label>
-                <input type="text" name="email" placeholder="johndoe@email.com" id="emailM">
-                <!--CHANGE PHONE NUMBER IN DATABASE TO CELL AND HOME PHONE-->
-                <label for="cellPhone">Cell Phone:</label>
-                <input type="number" name="cellPhone" placeholder="(555)-555-5555" id="cellPhoneM">
-                <label for="homePhone">Home Phone:</label>
-                <input type="number" name="homePhone" placeholder="(555)-555-5555" id="homePhoneM"><br>
-                <!--END OF PHONE -->
-                <input type="radio" name="status" id="marriedM">
-                <label for="status">Married</label>
-                <input type="radio" name="status" id="singleM">
-                <label for="status">Single</label>
-                <label for="anniversary">Wedding Anniversary:</label>
-                <input type="date" name="anniversary" id="wedDateM"><br>
-                <!--ADD SPOUSE DATA TO DATABASE-->
-                <label for="spouseFirstName">Spouse First Name:</label>
-                <input type="text" name="spouseFirstName" placeholder="Jane" id="spouseFirstNameM">
-                <label for="spouseMiddleInt">Spouse Middle Initial:</label>
-                <input type="text" name="spouseMiddleInt" placeholder="J" id="spouseMiddleInitialM">
-                <label for="spouseLastName">Spouse Last Name:</label>
-                <input type="text" name="spouseLastName" placeholder="Doe" id="spouseLNameM">
-                <label for="spouseBirthday">Spouse Birthday:</label>
-                <input type="date" name="spouseBirthday" id="spouseBirthdayM"><br>
-                <!--END OF SPOUSE DATA-->
-                </div>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" name="firstName" placeholder="John" id="firstNameM">
+                    <label for="middleInt">Middle Initial:</label>
+                    <input type="text" name="middleInitial" placeholder="J" id="middleInitialM">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" name="lastName" placeholder="Doe" id="lastNameM">
+                    <label for="Birthday">Birthday:</label>
+                    <input type="date" name="birthday" id="birthdayM"><br>
+                    <label for="StreetAddress">Street Address:</label>
+                    <input type="text" name="streetAddress" placeholder="111 First Street" id="streetAddressM">
+                    <label for="city">City:</label>
+                    <input type="text" name="city" placeholder="Aurora" id="cityM">
+                    <label for="state">State:</label>
+                    <input type="text" name="stateM" placeholder="MO" id="stateM">
+                    <label for="zipCode">Zip Code:</label>
+                    <input type="number" name="zipCode" placeholder="11111" id="zipCodeM"><br>
+                    <label for="email">Email Address:</label>
+                    <input type="text" name="email" placeholder="johndoe@email.com" id="emailM">
+                    <!--CHANGE PHONE NUMBER IN DATABASE TO CELL AND HOME PHONE-->
+                    <label for="cellPhone">Cell Phone:</label>
+                    <input type="text" name="cellPhone" placeholder="(555)-555-5555" id="cellPhoneM">
+                    <label for="homePhone">Home Phone:</label>
+                    <input type="text" name="homePhone" placeholder="(555)-555-5555" id="homePhoneM"><br>
+                    <!--END OF PHONE -->
+                    <input type="radio" name="maritalStatus" value="Married" id="marriedM">
+                    <label for="status">Married</label>
+                    <input type="radio" name="maritalStatus" value="Single" id="singleM">
+                    <label for="status">Single</label>
+                    <label for="anniversary">Wedding Anniversary:</label>
+                    <input type="date" name="anniversary" id="wedDateM"><br>
+                    <!--ADD SPOUSE DATA TO DATABASE-->
+                    <label for="spouseFirstName">Spouse First Name:</label>
+                    <input type="text" name="spouseFirstName" placeholder="Jane" id="spouseFirstNameM">
+                    <label for="spouseMiddleInt">Spouse Middle Initial:</label>
+                    <input type="text" name="spouseMiddleInt" placeholder="J" id="spouseMiddleInitialM">
+                    <label for="spouseLastName">Spouse Last Name:</label>
+                    <input type="text" name="spouseLastName" placeholder="Doe" id="spouseLNameM">
+                    <label for="spouseBirthday">Spouse Birthday:</label>
+                    <input type="date" name="spouseBirthday" id="spouseBirthdayM"><br>
+                    <!--END OF SPOUSE DATA-->
+                    </div>
                 <h3>Dependent Information</h3>
                 <h6>must be living with applicant</h6>
                 <div class="memFormSection">
-                <label for=" childFirstName1">Child's First Name:</label>
-                <input type="text" name="childFirstName1" placeholder="John" id="childFirstName1M">
-                <label for="childMiddleInt1">Child's Middle Initial:</label>
-                <input type="text" name="childMiddleInt1" placeholder="J" id="childMiddleInt1M">
-                <label for="childLastName1">Child's Last Name:</label>
-                <input type="text" name="childLastName1" placeholder="Doe" id="childLastName1M">
-                <input type="radio" name="childGender1" id="childGender1MaleM">
-                <label for="childGender1">Male</label>
-                <input type="radio" name="childGender1" id="childGender1FemaleM">
-                <label for="childGender1">Female</label>
-                <label for="childBirthday1">Child Birthday:</label>
-                <input type="date" name="childBirthday1" id="childBirthday1M"><br>
-                <label for=" childFirstName2">Child's First Name:</label>
-                <input type="text" name="childFirstName2" placeholder="John" id="childFirstName2M">
-                <label for="childMiddleInt2">Child's Middle Initial:</label>
-                <input type="text" name="childMiddleInt2" placeholder="J" id="childMiddleInt2M">
-                <label for="childLastName2">Child's Last Name:</label>
-                <input type="text" name="childLastName2" placeholder="Doe" id="childLastName2M">
-                <input type="radio" name="childGender2" id="childGender2MaleM">
-                <label for="childGender2">Male</label>
-                <input type="radio" name="childGender2" id="childGender2FemaleM">
-                <label for="childGender2">Female</label>
-                <label for="childBirthday2">Child Birthday:</label>
-                <input type="date" name="childBirthday2" id="childBirthday2M"><br>
-                <label for=" childFirstName3">Child's First Name:</label>
-                <input type="text" name="childFirstName3" placeholder="John" id="childFirstName3M">
-                <label for="childMiddleInt3">Child's Middle Initial:</label>
-                <input type="text" name="childMiddleInt3" placeholder="J" id="childMiddleInt3M">
-                <label for="childLastName3">Child's Last Name:</label>
-                <input type="text" name="childLastName3" placeholder="Doe" id="childLastName3M">
-                <input type="radio" name="childGender3" id="childGender3MaleM">
-                <label for="childGender3">Male</label>
-                <input type="radio" name="childGender3" id="childGender3FemaleM">
-                <label for="childGender3">Female</label>
-                <label for="childBirthday3">Child Birthday:</label>
-                <input type="date" name="childBirthday3" id="childBirthday3M"><br>
-                <label for=" childFirstName4">Child's First Name:</label>
-                <input type="text" name="childFirstName4" placeholder="John" id="childFirstName4M">
-                <label for="childMiddleInt4">Child's Middle Initial:</label>
-                <input type="text" name="childMiddleInt4" placeholder="J" id="childMiddleInt4M">
-                <label for="childLastName4">Child's Last Name:</label>
-                <input type="text" name="childLastName4" placeholder="Doe" id="childLastName4M">
-                <input type="radio" name="childGender4" id="childGender4MaleM">
-                <label for="childGender4">Male</label>
-                <input type="radio" name="childGender4" id="childGender4FemaleM">
-                <label for="childGender4">Female</label>
-                <label for="childBirthday4">Child Birthday:</label>
-                <input type="date" name="childBirthday4" id="childBirthday4M"><br>
-                </div>
+                    <label for=" childFirstName1">Child's First Name:</label>
+                    <input type="text" name="childFirstName1" placeholder="John" id="childFirstName1M">
+                    <label for="childMiddleInt1">Child's Middle Initial:</label>
+                    <input type="text" name="childMiddleInt1" placeholder="J" id="childMiddleInt1M">
+                    <label for="childLastName1">Child's Last Name:</label>
+                    <input type="text" name="childLastName1" placeholder="Doe" id="childLastName1M">
+                    <input type="radio" name="childGender1" value="Male" id="childGender1MaleM">
+                    <label for="childGender1">Male</label>
+                    <input type="radio" name="childGender1" value="Female" id="childGender1FemaleM">
+                    <label for="childGender1">Female</label>
+                    <label for="childBirthday1">Child Birthday:</label>
+                    <input type="date" name="childBirthday1" id="childBirthday1M"><br>
+                    <label for=" childFirstName2">Child's First Name:</label>
+                    <input type="text" name="childFirstName2" placeholder="John" id="childFirstName2M">
+                    <label for="childMiddleInt2">Child's Middle Initial:</label>
+                    <input type="text" name="childMiddleInt2" placeholder="J" id="childMiddleInt2M">
+                    <label for="childLastName2">Child's Last Name:</label>
+                    <input type="text" name="childLastName2" placeholder="Doe" id="childLastName2M">
+                    <input type="radio" name="childGender2" value="Male" id="childGender2MaleM">
+                    <label for="childGender2">Male</label>
+                    <input type="radio" name="childGender2" value="Female" id="childGender2FemaleM">
+                    <label for="childGender2">Female</label>
+                    <label for="childBirthday2">Child Birthday:</label>
+                    <input type="date" name="childBirthday2" id="childBirthday2M"><br>
+                    <label for=" childFirstName3">Child's First Name:</label>
+                    <input type="text" name="childFirstName3" placeholder="John" id="childFirstName3M">
+                    <label for="childMiddleInt3">Child's Middle Initial:</label>
+                    <input type="text" name="childMiddleInt3" placeholder="J" id="childMiddleInt3M">
+                    <label for="childLastName3">Child's Last Name:</label>
+                    <input type="text" name="childLastName3" placeholder="Doe" id="childLastName3M">
+                    <input type="radio" name="childGender3" value="Male" id="childGender3MaleM">
+                    <label for="childGender3">Male</label>
+                    <input type="radio" name="childGender3" value="Female" id="childGender3FemaleM">
+                    <label for="childGender3">Female</label>
+                    <label for="childBirthday3">Child Birthday:</label>
+                    <input type="date" name="childBirthday3" id="childBirthday3M"><br>
+                    <label for=" childFirstName4">Child's First Name:</label>
+                    <input type="text" name="childFirstName4" placeholder="John" id="childFirstName4M">
+                    <label for="childMiddleInt4">Child's Middle Initial:</label>
+                    <input type="text" name="childMiddleInt4" placeholder="J" id="childMiddleInt4M">
+                    <label for="childLastName4">Child's Last Name:</label>
+                    <input type="text" name="childLastName4" placeholder="Doe" id="childLastName4M">
+                    <input type="radio" name="childGender4" value="Male" id="childGender4MaleM">
+                    <label for="childGender4">Male</label>
+                    <input type="radio" name="childGender4" value="Female" id="childGender4FemaleM">
+                    <label for="childGender4">Female</label>
+                    <label for="childBirthday4">Child Birthday:</label>
+                    <input type="date" name="childBirthday4" id="childBirthday4M"><br>
+                    </div>
                 <h3>Area of Ministry Interest</h3>
                 <h6>check all you're interested in</h6>
                 <div class="memFormSection3">
@@ -152,109 +152,106 @@
                     <div class="box">
                 <h4>Praise Team Ministry</h4>
                 <label for="Music">Favorite Christian Music Genre(s):</label>
-                <input type="text" name="Music" placeholder="Traditional" id="MusicM"><br>
+                <input type="text" name="musicGenre" placeholder="Traditional" id="MusicM"><br>
                 <label for="playInstrument">Do you play an instrument?</label>
-                <input type="radio" name="playInstrument" id="playInstrumentYesM">
+                <input type="radio" name="instrument" value="Yes" id="playInstrumentYesM">
                 <label for="playInstrument">Yes</label>
-                <input type="radio" name="playInstrument" id="playInstrumentNoM">
+                <input type="radio" name="instrument" value="No" id="playInstrumentNoM">
                 <label for="playInstrument">No</label><br>
                 <label for="instrument">Instrument(s):</label>
-                <input type="text" name="instrument" placeholder="Piano" id="instrumentM"><br>
+                <input type="text" name="playInstrument" placeholder="Piano" id="instrumentM"><br>
                 <label for="yearsOfPlaying">Years of Playing Instrument:</label>
                 <input type="number" name="yearsOfPlaying" placeholder="5" id="yearsOfPlayingM"><br>
                 <!--NEED TO ADD FROM HERE DOWN TO DATABASE-->
                 </div>
                 <div class="box">
                 <h4>Sunday School Ministry</h4>
-                <input type="checkbox" name="nursery" id="nurseryM">
-                <label for="nursery">Nursury</label>
-                <input type="checkbox" name="toddlers" id="toddlersM">
+                <input type="checkbox" name="sundaySchoolMinistry[]" value="Nursery" id="nurseryM">
+                <label for="nursery">Nursery</label>
+                <input type="checkbox" name="sundaySchoolMinistry[]" value="Toddlers" id="toddlersM">
                 <label for="toddlers">Toddlers</label>
-                <input type="checkbox" name="primary" id="primaryM">
+                <input type="checkbox" name="sundaySchoolMinistry[]" value="Primary" id="primaryM">
                 <label for="primary">Primary(K-3)</label><br>
-                <input type="checkbox" name="intermediate" id="intermediateM">
+                <input type="checkbox" name="sundaySchoolMinistry[]" value="Intermediate" id="intermediateM">
                 <label for="intermediate">Intermediate(4-6)</label>
-                <input type="checkbox" name="juniorHigh" id="juniorHighM">
-                <label for="juniorHigh" >Junior High(7-9)</label><br>
-                <input type="checkbox" name="highSchool" id="highSchoolM">
+                <input type="checkbox" name="sundaySchoolMinistry[]" value="Junior High" id="juniorHighM">
+                <label for="juniorHigh">Junior High(7-9)</label><br>
+                <input type="checkbox" name="sundaySchoolMinistry[]" value="High School" id="highSchoolM">
                 <label for="highSchool">High School(7-9)</label>
-                <input type="checkbox" name="collegeAndCareer" id="collegeAndCareerM">
+                <input type="checkbox" name="sundaySchoolMinistry[]" value="College and Career" id="collegeAndCareerM">
                 <label for="collegeAndCareer">College and Career</label><br>
-                <input type="checkbox" name="adult" id="adultM">
+                <input type="checkbox" name="sundaySchoolMinistry[]" value="Adult" id="adultM">
                 <label for="adult">Adult</label>
-                <input type="checkbox" name="senior" id="seniorM">
+                <input type="checkbox" name="sundaySchoolMinistry[]" value="Seniors" id="seniorM">
                 <label for="senior">Seniors</label>
-                <label for="otherSunSchMinistry">Other:</label>
-                <input type="text" name="otherSunSchMinistry" placeholder="" id="otherSunSchMinistryM">
                 </div>
                 <div class="box">
                 <h4>Additional Areas of Ministry</h4>
                 <label style="font-weight: bold;">Adult:</label>
-                <input type="checkbox" name="bibleTeacher" id="bibleTeacherM">
+                <input type="checkbox" name="adult[]" value="Bible Teacher" id="bibleTeacherM">
                 <label for="bibleTeacher">Bible Teacher</label>
-                <input type="checkbox" name="prayerTeam" id="prayerTeamM">
+                <input type="checkbox" name="adult[]" value="Intercessory Prayer Team" id="prayerTeamM">
                 <label for="prayerTeam">Intercessory Prayer Team</label><br>
                 <label style="font-weight: bold;">Miscellaneous:</label>
-                <input type="checkbox" name="greeter" id="greeterM">
+                <input type="checkbox" name="miscellaneous[]" value="Greeter" id="greeterM">
                 <label for="greeter">Greeter</label>
-                <input type="checkbox" name="usher" id="usherM">
+                <input type="checkbox" name="miscellaneous[]" value="Usher" id="usherM">
                 <label for="usher">Usher</label><br>
                 <label style="font-weight: bold;">Church Outreach:</label>
-                <input type="checkbox" name="streetMinistry" id="streetMinistryM">
+                <input type="checkbox" name="churchOutreach[]" value="Street Ministry" id="streetMinistryM">
                 <label for="streetMinistry">Fishers of Men Street Ministry</label><br>
-                <input type="checkbox" name="addictionMinistry" id="addictionMinistryM">
+                <input type="checkbox" name="churchOutreach[]" value="Addiction Ministry" id="addictionMinistryM">
                 <label for="addictionMinistry">Freedom from Addiction Ministry</label>
                 </div>
                 <div class="box">
                 <h4>General Areas of Church Assistance</h4>
                 <label style="font-weight: bold;">Maintenance:</label>
-                <input type="checkbox" name="custodial" id="custodialM">
+                <input type="checkbox" name="maintenance[]" value="Custodial" id="custodialM">
                 <label for="custodial">Custodial</label>
-                <input type="checkbox" name="mechanical" id="mechanicalM">
+                <input type="checkbox" name="maintenance[]" value="Mechanical" id="mechanicalM">
                 <label for="mechanical">Mechanical</label>
-                <input type="checkbox" name="electrical" id="electricalM">
+                <input type="checkbox" name="maintenance[]" value="Electrical" id="electricalM">
                 <label for="electrical">Electrical</label><br>
-                <input type="checkbox" name="construction" id="constructionM">
+                <input type="checkbox" name="maintenance[]" value="Construction" id="constructionM">
                 <label for="construction">Construction</label>
-                <input type="checkbox" name="lawnCare" id="lawnCareM">
+                <input type="checkbox" name="maintenance[]" value="Lawn Care" id="lawnCareM">
                 <label for="lawnCare">Lawn Care</label>
-                <input type="checkbox" name="groundsKeeper" id="groundsKeeperM">
+                <input type="checkbox" name="maintenance[]" value="Grounds Keeper" id="groundsKeeperM">
                 <label for="groundsKeeper">Grounds Keeper</label>
-                <input type="checkbox" name="busDriver" id="busDriverM">
+                <input type="checkbox" name="maintenance[]" value="Bus Driver" id="busDriverM">
                 <label for="busDriver">Bus Driver</label><br>
                 <label style="font-weight: bold;">Food Pantry:</label>
-                <input type="checkbox" name="foodPantHelper" id="foodPantHelperM">
+                <input type="checkbox" name="foodPantry[]" value="Helper" id="foodPantHelperM">
                 <label for="foodPantHelper">Helper</label>
-                <input type="checkbox" name="foodPantDriver" id="foodPantDriverM">
+                <input type="checkbox" name="foodPantry[]" value="Driver" id="foodPantDriverM">
                 <label for="foodPantDriver">Driver</label><br>
                 <label style="font-weight: bold;">Media Specialist:</label>
-                <input type="checkbox" name="soundTech" id="soundTechM">
+                <input type="checkbox" name="mediaSpecialist[]" value="Sound Technician" id="soundTechM">
                 <label for="soundTech">Sound Technician</label>
-                <input type="checkbox" name="videoTech" id="videoTechM">
+                <input type="checkbox" name="mediaSpecialist[]" value="Video Technician" id="videoTechM">
                 <label for="videoTech">Video Technician</label><br>
                 <label style="font-weight: bold;">Kitchen:</label>
-                <input type="checkbox" name="kitchenHelper" id="kitchenHelperM">
+                <input type="checkbox" name="kitchen[]" value="Helper" id="kitchenHelperM">
                 <label for="kitchenHelper">Helper</label>
-                <input type="checkbox" name="kitchenCook" id="kitchenCookM">
+                <input type="checkbox" name="kitchen[]" value="Cook" id="kitchenCookM">
                 <label for="kitchenCook">Cook</label>
-                <input type="checkbox" name="kitchenClean" id="kitchenCleanM">
+                <input type="checkbox" name="kitchen[]" value="Clean Up" id="kitchenCleanM">
                 <label for="kitchenClean">Clean Up</label><br>
-                <label for="otherGenMinistry">Other:</label>
-                <input type="text" name="otherGenMinistry" placeholder="" id="otherGenMinistryM">
+                
             </div>
             <div class="box">
                 <h4>Harvest Christian Academy</h4>
                 <label style="font-weight: bold;">Classroom:</label>
-                <input type="checkbox" name="classMonitor" id="classMonitorM">
+                <input type="checkbox" name="classroom[]" value="Monitor" id="classMonitorM">
                 <label for="classMonitor">Monitor</label>
-                <input type="checkbox" name="classWorker" id="classWorkerM">
+                <input type="checkbox" name="classroom[]" value="General Worker" id="classWorkerM">
                 <label for="classWorker">General Worker</label><br>
                 <label style="font-weight: bold;">Tutor:</label>
-                <input type="checkbox" name="math" id="mathM">
+                <input type="checkbox" name="tutor[]" value="Math" id="mathM">
                 <label for="math">Math</label>
-                <input type="checkbox" name="english" id="englishM">
+                <input type="checkbox" name="tutor[]" value="English" id="englishM">
                 <label for="english">English</label>
-                <input type="checkbox" name="reading" id="readingM">
+                <input type="checkbox" name="tutor[]" value="Reading" id="readingM">
                 <label for="reading">Reading</label>
                 </div>
                 </div>
@@ -262,7 +259,8 @@
                 <h4>Additional Notes, Concerns, or Comments</h4>
                 <textarea name="notes" id="notesM"></textarea><br>
                 <h6 style="font-size: 17.5px; font-style: italic;">By clicking the 'Submit Member Application' button, I accept and agree with the Statement of Faith of Harvest Church that was presented to me. I also agree to pray for all leadership, serve when called upon, and support the church financially.</h6><br>
-                <input type="button" name="submit" id="submitM" value="Submit Member Application">
+                
+                <button id="submitM">Submit My Member Application</button>
             
             </div>
             </div>
