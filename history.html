@@ -12,14 +12,15 @@
     <link rel="stylesheet" href="style.css">
     <title>Harvest Church - Aurora, MO</title>
     </head>
-   <header>
-        <h1 class="banner">Harvest Church</h1>
+    <header>
+        <div class="banner">
+            <img src="images/logo/logo.png">
         <nav>
             <ul>
                 <li><a href="home.html">Home</a></li>
                 <li><a class="active">About</a>
                     <ul>
-                        <li><a href="history.html">History</a></li>
+                        <li><a href="history.html" class="active">Pastors</a></li>
                         <li><a href="vision.html">Vision</a></li>
                         <li><a href="faith.html">Statement of Faith</a></li>
                     </ul></li>
@@ -32,7 +33,7 @@
                         <li><a href="women.html">Women</a></li>
                         <li><a href="seniors.html">Seniors</a></li>
                         <li><a href="addiction.html">Recovery & Addiction</a></li>
-                        <li><a href="foodPantry.html" class="active">Food Pantry</a></li>
+                        <li><a href="foodPantry.html" >Food Pantry</a></li>
                         <li><a href="academy.html">Harvest Christian Academy</a></li>
                         <li><a href="discSchool.html">Harvest School of Discipleship</a></li>
 
@@ -40,18 +41,14 @@
                 <li><a href="memberForm.html">Become A Member</a></li>
             </ul>
         </nav>
+        </div>
     </header>
     <div class="content">
-        <h2>history</h2>
-        
-        <div class="calendar">
-            <h3 style="margin-top: 5; margin: 0;">Calendar</h3>
-            <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23616161&ctz=America%2FChicago&showCalendars=0&title=Harvest%20Church&showPrint=0&showNav=0&showDate=1&showTz=0&src=bWlrZXkuc2F1Y2VkbzhAZ21haWwuY29t&src=NTU0YjkwMTQ2MTIxNDgxOTZlZTYxMTk5NzEwNGIwZDczZGY2YmJiYjU0MzA0Y2MzODI2NmZjOWExMmMwNWQwMEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%237986CB&color=%23C0CA33&color=%230B8043" style="border:solid 1px #777" width="400" height="325" frameborder="0" scrolling="no"></iframe>
-        </div>
         
         <div class="desc">
-            <h3>Harvest History</h3>
-            <p>Pastor Terry and Pam Fletcher have been full time Pastors since July 1990. They worked part time for several years in youth, young singles and as Associate Pastors then decided to except the Pastorate at Victory Christian Fellowship in Columbus NE. They held that position for 8 years. Terry then felt led by the Spirit to resign from the Church in NE and move 500 miles to a small town in south east MO. In April of 2001 they became pastors of Lighthouse Full Gospel Church. Terry had a vision to reach the lost and the name of the Church was changed to Harvest Church and has since been reaching the lost in a variety of out reach ministries. In 2009 Harvest bought land at the edge of Aurora MO and since then they have seen a great number of people saved and baptized in The Holy Spirit.</p>
+            <h2>harvest pastors</h2>
+            <img src="images/about/about1.jpg" id="history">
+            <p class="paraOne">Pastor Terry and Pam Fletcher have been full time Pastors since July 1990. They worked part time for several years in youth, young singles and as Associate Pastors then decided to except the Pastorate at Victory Christian Fellowship in Columbus NE. They held that position for 8 years. Terry then felt led by the Spirit to resign from the Church in NE and move 500 miles to a small town in south east MO. In April of 2001 they became pastors of Lighthouse Full Gospel Church. Terry had a vision to reach the lost and the name of the Church was changed to Harvest Church and has since been reaching the lost in a variety of out reach ministries. In 2009 Harvest bought land at the edge of Aurora MO and since then they have seen a great number of people saved and baptized in The Holy Spirit.</p>
         </div>
     </div>
     <footer>
@@ -62,11 +59,20 @@
             <a href="tel:4176782310" target="_blank">(417) 678-2310</a><br>
             <a href="mailto:harvest.aurora.mo@gmail.com" target="_blank">harvestchurch.aurora.mo@gmail.com</a>
         </div>
+        <div class="footerGive">
+            <h5>Want to give to the church? Click the button below!</h5>
+            <button class="tithely-give-btn" style="background-color: #b1ded1;font-family: inherit;font-weight: bold;font-size: 19px; padding: 15px 70px; border-radius: 4px; cursor: pointer; background-image: none; color: #083c2c; text-shadow: none; display: inline-block; float: none; border: none;" data-church-id="375703">Give</button>
+            <script src="https://tithe.ly/widget/v3/give.js?3"></script>
+            <script>
+                var tw = create_tithely_widget();
+                </script>
+        </div>
         <div class="footerIcons">
+            <h5>Check us out on social media!</h5>
             <a href="https://www.facebook.com/profile.php?id=100064870802491" target="_blank" class="fa fa-facebook"></a>
             <a href="https://www.instagram.com/harvestchurch_aurora/" target="_blank" class="fa fa-instagram"></a>
-            <a href="https://get.tithe.ly/download-tithely-app" target="_blank" class="fa-solid fa-money-bill"></a>
         </div>
     </footer>
 </body>
 </html>
+
