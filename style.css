@@ -1,41 +1,65 @@
 /* Fonts */
 
+*
+{
+    color: #083c2c;
+}
 @font-face {
     font-family: KaiseiTokumin-Regular;
     src: url(fonts\Kaisei_Tokumin\KaiseiTokumin-Regular.ttf);
 }
 
+.banner
+{
+    width: 100%;
+    float: left;
+    display: inline;
+}
+.banner img
+{
+    width: 30%;
+}
 /* Navigation bar */
 nav {
-    width: 100%;
+    width: 65%;
     display: inline-block;
     text-align: center;
-    background-color: #226b8f;
-    margin-top: 0px;
+    /*background-color: #226b8f;*/
+    margin-top: 50px;
     padding-top: 0px;
+    margin-right: 2.5%;
+    float: right;
+    
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #226b8f;
+    /*background-color: #226b8f;*/
     position: relative;
     top: 0;
     width: fit-content;
     display: flex;
+    float: right;
+    width: 100%;
+    font-variant: small-caps;
+    font-weight: bold;
+    border: .5px solid #083c2c;
 }
 
 nav ul li {
     display: inline-block;
     position: relative;
-    width: 200px;
+    /*width: 200px;*/
+    width: 100%;
+    background-color: white;
 }
 
 nav ul li a {
     display: block;
     padding: 8px;
-    color: white;
+    color: #083c2c;
     text-align: center;
     padding: 10px 14px;
     text-decoration: none;
@@ -43,12 +67,17 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #4491b8;
+    /*background-color: #4491b8;*/
+    background-color: #083c2c;
     transition: 0.3s ease all;
+    color: white;
 }
 
 .active {
-    background-color: #4491b8;
+    /*background-color: #4491b8;*/
+    background-color: #083c2c;
+    color: white;
+    
 }
 
 /* Dropdown */
@@ -70,7 +99,6 @@ header nav li a::after {
   
   header nav ul li:hover ul {
       display: inherit;
-      z-index: 99;
   }
   
   header nav ul ul li{
@@ -81,14 +109,7 @@ header nav li a::after {
   }
 
 /* Body */
-html {
-    width: 100%;
-}
-*
-{
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-}
+
 body {
     margin: 0;
 }
@@ -98,8 +119,12 @@ body {
     padding: 20px;
 }
 
+h1
+{
+    
 
-.banner
+}
+/*.banner
 {
     background-color: #226b8f;
     width: 100%;
@@ -114,64 +139,108 @@ body {
 .banner h1
 {
     padding-left: 25px;
-}
+}*/
 h2
 {
     width: 100%;
     text-align: center;
-    color: #226b8f;
+    color:  #083c2c;
     font-size: 75px;
     font-variant: small-caps;
     margin-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
 
 }
+
 
 .video
 {
-    width: 94.75%;
-    border: #226b8f 2px solid;
+    width: 95%;
+    border:  #083c2c 2.5px solid;
     text-align: center;
     margin-left: 2.5%;
-    margin-right: 2.5%;
     margin-top: 25px;
-    background-color: #d5ecf7;
+    border-radius: 15px;
 }
 .video iframe
 {
-    margin-top: 15px;
+    
     border-radius: 15px;
 }
 .video button
 {
-    margin-left: 35%;
-    margin-right: 35%;
     width: 30%;
-    background-color: #226b8f;
+    background-color:  #083c2c;
     color: white;
     border-radius: 5px;
     height: 50px;
     font-size: 15px;
     font-weight: lighter;
     margin-bottom: 15px;
+    margin-left: 35%;
+    margin-right: 35%;
 }
+
 .video button:hover
 {
-    background-color: #4491b8;
+    transition: 0.5s;
+    color: #083c2c;
+    background-color: #b1ded1;
+    border: #083c2c 2.5px solid;
+    box-shadow: #083c2c 5px 5px 0px 0px;
 }
 
 .calendar
 {
-    width: 94.75%;
+    width: 95%;
     float: left;
-    
-    border: #226b8f 2px solid;
+    border: #083c2c 2.5px solid;
     text-align: center;
     margin-left: 2.5%;
     margin-top: 15px;
-    background-color: #d5ecf7;
     padding-bottom: 15px;
     margin-bottom: 25px;
+    border-radius: 15px;
     
+}
+#calendar
+{
+    width: 75%;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+}
+#calendar button
+{
+    background-color: #083c2c;
+}
+#calendar button span
+{
+    color: white;
+}
+.fc-day-today
+{
+    background-color: #b1ded1;
+}
+.fc-daygrid-event-dot {
+    border: calc(var(--fc-daygrid-event-dot-width)/2) solid #b1ded1;
+    border-radius: calc(var(--fc-daygrid-event-dot-width)/2);
+    box-sizing: content-box;
+    height: 0;
+    margin: 0 4px;
+    width: 0;
+}
+.fc .fc-list-event-dot {
+    border: calc(var(--fc-list-event-dot-width)/2) solid #b1ded1;
+    border-radius: calc(var(--fc-list-event-dot-width)/2);
+    box-sizing: content-box;
+    display: inline-block;
+    height: 0;
+    width: 0;
+}
+
+.fc .fc-daygrid-day.fc-day-today {
+    background-color: #b1ded1;
 }
 
 h3
@@ -180,16 +249,42 @@ h3
     font-variant: small-caps;
     text-decoration: underline;
 }
+.imgL
+{
+    margin-top: 20px;
+    width: 45%;
+    margin-left: 2.5%;
+    float: left;
+    margin-bottom: 15px;
+    padding: 2px;
+    border: #083c2c 2.5px solid;
+    border-radius: 15px;
+}
+.imgR
+{
+    margin-top: 20px;
+    width: 45%;
+    margin-right: 1.25%;
+    float: right;
+    margin-bottom: 15px;
+    padding: 2px;
+    border: #083c2c 2.5px solid;
+    border-radius: 15px;
+}
+
+
 
 .prayerForm
 {
     width: 45%;
     float: left;
-    border: #226b8f 2px solid;
+    border: #083c2c 2.5px solid;
     text-align: center;
-    margin-left: 2.5%;
+    margin-left: 5%;
     margin-top: 15px;
-    background-color: #d5ecf7;
+    margin-bottom: 12.5px;
+    padding: 2px;
+    border-radius: 15px;
 }
 form h1
 {
@@ -207,7 +302,6 @@ form h1
  font-weight: 300;
  margin-bottom: 5px;
  padding-right: 50px;
- padding-bottom: 10px;
  text-align: right;
 }
 form label
@@ -224,11 +318,13 @@ form input
 {
     width: 45%;
     float: right;
-    border: #226b8f 2px solid;
+    border: #083c2c 2.5px solid;
     text-align: center;
-    margin-right: 2.5%;
+    margin-right: 5%;
     margin-top: 15px;
-    background-color: #d5ecf7;
+    margin-bottom: 15px;
+    padding: 2px;
+    border-radius: 15px;
 }
 .questionForm form
 {
@@ -239,11 +335,30 @@ position: relative;
  font-weight: 300;
  margin-bottom: 5px;
  padding-right: 50px;
- padding-bottom: 10px;
  text-align: right;
 }
+#submitQ, #submitP
+{
+    width: 75%;
+    background-color:  #083c2c;
+    color: white;
+    border-radius: 5px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: lighter;
+    margin-bottom: 15px;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+}
 
-
+#submitQ:hover, #submitP:hover, #submitM:hover
+{
+    transition: 0.5s;
+    color: #083c2c;
+    background-color: #b1ded1;
+    border: #083c2c 2.5px solid;
+    box-shadow: #083c2c 5px 5px 0px 0px;
+}
 .questionForm label:nth-child(4)
 {
    text-align: left;
@@ -258,7 +373,7 @@ form textarea
 
 .content
 {
-    padding-bottom: 0px;
+    
 }
 
 *
@@ -272,41 +387,47 @@ footer h1
     text-align: left;
     margin-bottom: 0px;
     padding-bottom: 0px;
+    color: white;
+}
+footer address
+{
+    color: white;
 }
 footer
 {
-    background-color: #226b8f;
+    background-color: #083c2c;
     color: white;
     width: 100%;
-    display: inline-block;
-    margin-top: 40px;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-    position: relative;
-    bottom:0;
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-end;
 }
 .footerInfo
 {
-    float: left;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
+    width: 100%;
+    color: white;
+    align-self: center;
+
+}
+.footerInfo h1, .footerInfo address, .footerInfo a
+{
+    margin-left: 5%;
 }
 .footerIcons
 {
-    
+    width: 95%;
     float: right;
-    background-color: #226b8f;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
+    color: white;
+    align-self: baseline;
+    padding-right: 2.5%;
+
 }
 .footerIcons a
 {
     
     padding: 25px;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
     float: right;
-    background-color: #226b8f;
+    color:white;
 }
 
 footer a
@@ -316,42 +437,268 @@ footer a
 }
 footer a:hover
 {
-    text-decoration: underline;
+    text-decoration: none;
     color: #d5ecf7;
     transition: 0.5s;
 }
+.footerGive
+{
+    align-self: baseline;
+}
+footer h5
+{
+    font-style: italic;
+    color: white;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 15px;
+    padding-bottom: 0px;
+    margin-bottom: 5px;
+}
+.footerIcons h5
+{
+    text-align: right;
+}
+.footerGive button:hover
+{
+    transition: 0.5s;
+    border: #083c2c 2.5px solid;
+    box-shadow: white 5px 5px 0px 0px;
+}
+
+
 .desc
 {
     text-align: center;
-    width: 94.75%;
-    border: #226b8f 2px solid;
+    width: 95%;
+    border: #083c2c 2.5px solid;
     text-align: center;
     margin-left: 2.5%;
     margin-right: 2.5%;
     margin-top: 10px;
     padding-top: 10px;
-    background-color: #d5ecf7;
-    display: inline-block;
     /*Necessary for statement of faith - ave helpppppp*/
+    display: inline-block;
+    border-radius: 15px;
 }
 .desc p
 {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+}
+.desc h5
+{
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    font-style: italic;
+}
+.desc .paraOne
+{
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    width: 35%;
+    padding-top: 50px;
+}
+
+.kids
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+
+}
+.kids div
+{
+   width: 30%; 
+   margin-left: 0px;
+   margin-right: 0px;
+   padding-left: 0px;
+   padding-right: 0px;
+   align-self: center;
+}
+
+.kids div image
+{
+    width: 100%;
+}
+.desc .vision
+{
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    width: 35%;
+    padding-top: 50px;
+}
+#history
+{
+    width: 35%;
+    float: right;
+    margin-right: 7.5%;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    border: #083c2c 2.5px solid;
+    padding: 2px;
+    border-radius: 15px;
+}
+#visionImg
+{
+    width: 35%;
+    float: right;
+    margin-right: 7.5%;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    border: #083c2c 2.5px solid;
+    padding: 2px;
+    border-radius: 15px;
+}
+#paraPant
+{
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    width: 35%;
+    padding-top: 150px;
+    font-style: italic;
+}
+#pantry
+{
+    width: 35%;
+    float: right;
+    margin-right: 7.5%;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    border: #083c2c 2.5px solid;
+    padding: 2px;
+    border-radius: 15px;
+}
+.desc img
+{
+    width: 75%;
+    margin-right: 7.5%;
+    margin-left: 7.5%;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    border: #083c2c 2.5px solid;
+    padding: 2px;
+    border-radius: 15px;
+}
+.flex
+{
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+}
+.flex div
+{
+    width: 30%;
+    align-self: center;
+}
+.flex div img
+{
+    width: 100%;
+}
+
+.ya
+{
+    width: 95%;
     margin-left: 2.5%;
     margin-right: 2.5%;
+}
+.ya img
+{
+    width: 70%;
+}
+
+.addict
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.addict div
+{
+    width: 50%;
+    align-self: center ;
 }
 
 .memFormSection
 {
-    width: 94.75%;
+    width: 95%;
     float: right;
-    border: #226b8f 2px solid;
-    padding-left: 2.5%;
+    border: #083c2c 2.5px solid;
     margin-right: 2.5%;
+    margin-left: 2.5%;
     margin-top: 15px;
-    background-color: #d5ecf7;
-    padding-top: 10px ;
-    height: fit-content;
+    padding: 10px ;
+    border-radius: 15px;
 }
+.memFormSection3
+{
+    width: 96.5%;
+    margin-right: 2.5%;
+    margin-left: 1%;
+    margin-top: 15px;
+    padding-top: 10px ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    word-wrap: normal;
+}
+.anotha
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    word-wrap: normal;
+    border: #083c2c 2.5px solid;
+    width: 100%;
+    border-radius: 15px;
+}
+.memFormSection3 .anotha .box
+{
+    
+    padding: 10px;
+    flex-grow: 1;
+}
+.memFormSection3 .box:nth-of-type(1)
+{
+    border: 0px 5px 0px 0px #083c2c solid;
+    border-radius: 15px;
+}
+
+.memFormSection3 .btmbox
+{
+    padding: 10px;
+    
+}
+.memFormSection3 textarea
+{
+    height: 200px;
+    color: #083c2c;
+}
+.btmbox h6
+{
+    width: 70%;
+    text-align: center;
+    margin-left: 15%;
+}
+#submitM
+{
+    margin-left: 35%;
+    margin-right: 35%;
+    width: 30%;
+    background-color:  #083c2c;
+    color: white;
+    border-radius: 5px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: lighter;
+    margin-bottom: 15px;
+}
+
+
 .contentM h3, h6
 {
     margin-top: 0px;
@@ -382,14 +729,17 @@ footer a:hover
 .desc .side1
 {
     width: 45%;
-    float: left;
     text-align: left;
     margin-left: 2.5%;
+    float: left;
 }
 .desc .side2
 {
     width: 45%;
-    float: right;
     text-align: right;
     margin-right: 2.5%;
+    float: right;
 }
+
+    
+
