@@ -625,19 +625,22 @@ footer h5
 .memFormSection
 {
     width: 95%;
-    float: right;
     border: #083c2c 2.5px solid;
     margin-right: 2.5%;
     margin-left: 2.5%;
     margin-top: 15px;
     padding: 10px ;
     border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
 }
 .memFormSection3
 {
-    width: 96.5%;
+    width: 95%;
     margin-right: 2.5%;
-    margin-left: 1%;
+    margin-left: 2.5%;
     margin-top: 15px;
     padding-top: 10px ;
     display: flex;
