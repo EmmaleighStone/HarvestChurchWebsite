@@ -45,6 +45,11 @@
                   
               eventObj.googleCalendarId = " ";    
               alert('Clicked ' + eventObj.title);
+              if (eventObj.url) {
+                info.jsEvent.preventDefault();
+                window.open(eventObj.url, "_blank");
+                return false;
+                }
               
         },
           });
